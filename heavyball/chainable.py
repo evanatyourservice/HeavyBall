@@ -442,7 +442,7 @@ class ChainOpt(utils.StatefulOptimizer):
 
 
 use_default = object()
-str_or_fn = Union[str, callable, None, use_default]
+str_or_fn = Union[Any]
 
 
 def _get_clip_fn(name: str_or_fn, default_val: str_or_fn):
